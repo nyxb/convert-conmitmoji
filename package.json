@@ -1,6 +1,6 @@
 {
   "name": "@nyxb/convert-conmitmoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "♻️ Convert strings to conmitmojis",
   "author": "Dennis Ollhoff <contact@nyxb.yxz>",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "test": "vitest",
     "lint": "eslint ./src",
     "prepublishOnly": "nyxr build",
-    "release": "bump",
+    "release": "@nyxb/bump",
     "start": "esno ./src/index.ts",
     "typecheck": "tsc --noEmit"
   },
