@@ -37,7 +37,7 @@
     "test": "vitest",
     "lint": "eslint ./src",
     "prepublishOnly": "nyxr build",
-    "release": "@nyxb/bump",
+    "release": "npx @nyxb/bump",
     "start": "esno ./src/index.ts",
     "typecheck": "tsc --noEmit"
   },
