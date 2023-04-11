@@ -1,0 +1,54 @@
+{
+  "name": "@nyxb/convert-conmitmoji",
+  "version": "0.0.1",
+  "description": "♻️ Convert strings to conmitmojis",
+  "author": "Dennis Ollhoff <contact@nyxb.yxz>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/nyxb",
+  "homepage": "https://github.com/nyxb/convert-conmitmoji#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/convert-conmitmoji.git"
+  },
+  "bugs": "https://github.com/nyxb/convert-conmitmoji/issues",
+  "keywords": [
+    "github",
+    "conventional",
+    "emoji",
+    "convert"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "test": "vitest",
+    "lint": "eslint ./src",
+    "prepublishOnly": "nyxr build",
+    "release": "bump",
+    "start": "esno ./src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@nyxb/bump": "^0.0.3",
+    "@nyxb/eslint-config": "^0.0.9",
+    "@types/node": "^17.0.23",
+    "eslint": "^8.18.0",
+    "esno": "^0.16.3",
+    "typescript": "^4.6.3",
+    "unbuild": "^0.7.4",
+    "vitest": "^0.17.0"
+  }
+}
